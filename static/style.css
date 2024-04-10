@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+
+textarea {
+    width: 80%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+}
+
+
+#result {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    color: #333;
+    font-size: 20px;
+    border: 1px solid #dcdcdc;
+    display: inline-block;
+    min-width: 200px;
+    text-align: center;
+}
+
+/* Additional styles for different sentiment results */
+.result-positive {
+    color: #4CAF50;
+}
+
+.result-negative {
+    color: #F44336;
+}
+
+.result-neutral {
+    color: #FFC107;
+}

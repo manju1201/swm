@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sentiment Analysis Tool</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <h1>Sentiment Analysis Tool</h1>
+    <form id="analyzeForm">
+        <textarea name="text" rows="4" cols="50" id="text"></textarea><br>
+        <input type="submit" value="Analyze Sentiment">
+    </form>
+    <div id="result"></div>
+    <script>
+        document.getElementById('analyzeForm').onsubmit = function(event) {
+            event.preventDefault();
+            fetch('/analyze', {
+                method: 'POST',
+                body: JSON.stringify({text: document.getElementById('text').value}),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                const resultElement = document.getElementById('result');
+                resultElement.textContent = 'Sentiment: ' + data.sentiment;
+                resultElement.className = ''; // Reset class
+                
+                // Assign class based on sentiment
+                if (data.sentiment === 'POSITIVE') {
+                    resultElement.classList.add('result-positive');
+                } else if (data.sentiment === 'NEGATIVE') {
+                    resultElement.classList.add('result-negative');
+                } else {
+                    resultElement.classList.add('result-neutral');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        };
+    </script>
+    
+    <!-- <script>
+        document.getElementById('analyzeForm').onsubmit = function(event) {
+            event.preventDefault();
+            console.log("Form submitted."); // Debug log
+            fetch('/analyze', {
+                method: 'POST',
+                body: JSON.stringify({text: document.getElementById('text').value}),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => {
+                console.log("Received response."); // Debug log
+                return response.json();
+            })
+            .then(data => {
+                console.log("Data:", data); // Debug log
+                document.getElementById('result').textContent = 'Sentiment: ' + data.sentiment;
+            })
+            .catch(error => console.error('Error:', error));
+        };
+    </script> -->
+    
+</body>
+</html>
