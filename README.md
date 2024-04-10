@@ -66,3 +66,12 @@ The project includes a user interface where users can input text data, such as t
 - Positive sentiment (POS)
 - Negative sentiment (NEG)
 - Neutral sentiment (NEU)
+
+## Installation and Setup
+To run the code, you will need to install the following dependencies:
+- Flask: `pip install flask`
+- Transformers: `pip install transformers`
+
+## How to run
+After installing the dependencies, navigate to the directory where the code is located, and run `python app.py` in your terminal. Then, open the following URL in your web browser: [http://127.0.0.1:5000](http://127.0.0.1:5000).
+
