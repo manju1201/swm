@@ -67,6 +67,18 @@ The project includes a user interface where users can input text data, such as t
 - Negative sentiment (NEG)
 - Neutral sentiment (NEU)
 
+### UI
+![UI](UI.jpg)
+
+### UI Positive Tweet
+![UI Positive Tweet](UIpositivetweet.jpg)
+
+### UI Negative Tweet
+![UI Negative Tweet](UInegtweet.jpg)
+
+### UI Neutral Tweet
+![UI Neutal Tweet](UIneutraltweet.jpg)
+
 ## Installation and Setup
 To run the code, you will need to install the following dependencies:
 - Flask: `pip install flask`
@@ -74,4 +86,15 @@ To run the code, you will need to install the following dependencies:
 
 ## How to run
 After installing the dependencies, navigate to the directory where the code is located, and run `python app.py` in your terminal. Then, open the following URL in your web browser: [http://127.0.0.1:5000](http://127.0.0.1:5000).
+
+## Data Visualizations
+
+### Tweet Counts
+![Tweet Count](datavisualizationtweetcounts.png)
+
+### Positive Word Cloud
+![Positive Word Cloud](positivewordcloud.png)
+
+### Negative Word Cloud 
+![Negative Word Cloud](negwordcloud.png)
 
