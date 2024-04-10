@@ -5,10 +5,10 @@ This project aims to perform sentiment analysis on text data, utilizing various 
 
 ## Data Preprocessing
 The following preprocessing steps were applied to the dataset:
-- Removal of HTML tags
-- Removal of URLs
+- Removal of HTML tags and URLs
+- Removal of Punctuation adn Stopwords
 - Lowercasing
-- Removal of whitespace
+- Removal of whitespace and Special Characters
 - Removal of local chat words
 
 ## Algorithms Used
