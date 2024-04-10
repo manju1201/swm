@@ -70,13 +70,13 @@ The project includes a user interface where users can input text data, such as t
 ### UI
 ![UI](UI.jpg)
 
-### UI Positive Tweet
+### UI - Positive Tweet
 ![UI Positive Tweet](UIpositivetweet.jpg)
 
-### UI Negative Tweet
+### UI - Negative Tweet
 ![UI Negative Tweet](UInegtweet.jpg)
 
-### UI Neutral Tweet
+### UI - Neutral Tweet
 ![UI Neutal Tweet](UIneutraltweet.jpg)
 
 ## Installation and Setup
